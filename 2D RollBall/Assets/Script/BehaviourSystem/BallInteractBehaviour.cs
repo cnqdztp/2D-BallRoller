@@ -27,6 +27,7 @@ public class BallInteractBehaviour : MonoBehaviour
         {
             _ballSoundBehaviour.PlayVictorySE();
         }
+
     }
     
     private void OnCollisionEnter2D(Collision2D other)

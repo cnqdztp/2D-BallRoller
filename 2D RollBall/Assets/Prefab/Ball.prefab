@@ -292,6 +292,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 08a7247cdfce0a14680ef178fce3048a, type: 3}
   - {fileID: 8300000, guid: 41817782d26a3ea4abe99b72585be481, type: 3}
   - {fileID: 8300000, guid: c98fd1f56c63cc949a7d2c3801ed3a98, type: 3}
+  unlockSound:
+  - {fileID: 8300000, guid: 1cbcce973fdfa6a4d86bc698cba67911, type: 3}
+  - {fileID: 8300000, guid: 8fd3e850cd27b21449415ffa979716fd, type: 3}
+  - {fileID: 8300000, guid: 1694da442dda9414c8ea343cd9854acf, type: 3}
+  - {fileID: 8300000, guid: e0d209ac037d40d49beb9118be04b9a3, type: 3}
   victorySound:
   - {fileID: 8300000, guid: 88f5de5dcb7800b4982b88ef90ca83e9, type: 3}
   - {fileID: 8300000, guid: 2193fd300f0f1b94f89fba48883b468d, type: 3}

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class BallManager : MonoBehaviour
     private bool isVictory;
     [SerializeField] private float OverrideControllerSpeed = 10;
 
+    private GameObject newBall;
+    public Slider sensitivitySlider;
+    
     private void Awake()
     {
         SpawnPoint = GameObject.FindGameObjectWithTag("Respawn");
@@ -23,7 +27,7 @@ public class BallManager : MonoBehaviour
 
     public void InstantiateBall()
     {
-        var newBall = Instantiate(BallPrefab, SpawnPoint.transform.position, new Quaternion(0, 0, 0, 0));
+        newBall = Instantiate(BallPrefab, SpawnPoint.transform.position, new Quaternion(0, 0, 0, 0));
         newBall.GetComponent<Controller>().speed = OverrideControllerSpeed;
         // RegisterBall(newBall);
     }
@@ -42,6 +46,12 @@ public class BallManager : MonoBehaviour
     public void RemoveRegister(GameObject _ball)
     {
         throw new NotImplementedException();
+    }
+
+    public void ReadSensitivityFromSlider()
+    {
+        OverrideControllerSpeed = sensitivitySlider.value;
+        newBall.GetComponent<Controller>().speed = OverrideControllerSpeed;
     }
     
 }
