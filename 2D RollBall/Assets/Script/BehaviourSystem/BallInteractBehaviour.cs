@@ -21,7 +21,7 @@ public class BallInteractBehaviour : MonoBehaviour
         if (other.CompareTag("Hole"))
         {
             _ballSoundBehaviour.PlayHoleSE();
-            _lifespanBehaviour.OnDropHole();
+            _lifespanBehaviour.OnDropHole(other);
         }
         else if (other.CompareTag("Finish"))
         {
