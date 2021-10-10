@@ -12,6 +12,8 @@ public class LifespanBehaviour : MonoBehaviour
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
         ballManager = gameManager.GetComponent<BallManager>();
+        transform.localScale = Vector3.zero;
+        transform.DOScale(new Vector3(0.5f,0.5f,1f), 0.5f);
     }
 
 
@@ -30,7 +32,7 @@ public class LifespanBehaviour : MonoBehaviour
         this.GetComponent<SpriteRenderer>().DOFade(0, 0.3f);
         // gameObject.GetComponent<Renderer>().enabled = false;
         yield return new WaitForSeconds(0.5f);
-        ballManager.InstantiateBall();
+        ballManager.onBallDrop();
         Destroy(gameObject);
     }
 }

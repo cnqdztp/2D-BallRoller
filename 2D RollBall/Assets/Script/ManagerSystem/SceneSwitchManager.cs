@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitchManager : MonoBehaviour
 {
-    void Reload()
+    public void Reload()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
