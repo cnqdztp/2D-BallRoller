@@ -11,13 +11,17 @@ public class BallManager : MonoBehaviour
     [SerializeField] GameObject SpawnPoint;
     private bool isVictory;
     [SerializeField] private float OverrideControllerSpeed = 10;
+    [SerializeField] private SceneSwitchManager _sceneSwitchManager;
+    private bool isSpawnableScene;
 
     private GameObject newBall;
     public Slider sensitivitySlider;
     
     private void Awake()
     {
+        _sceneSwitchManager = GetComponent<SceneSwitchManager>();
         SpawnPoint = GameObject.FindGameObjectWithTag("Respawn");
+        isSpawnableScene = SpawnPoint.GetComponent<SpawnPointBehaviour>().isSpawnable;
     }
 
     private void Start()
@@ -25,6 +29,18 @@ public class BallManager : MonoBehaviour
         InstantiateBall();
     }
 
+    public void onBallDrop()
+    {
+        if (isSpawnableScene)
+        {
+            InstantiateBall();
+        }
+        else
+        {
+            _sceneSwitchManager.Reload();
+        }
+    }
+    
     public void InstantiateBall()
     {
         newBall = Instantiate(BallPrefab, SpawnPoint.transform.position, new Quaternion(0, 0, 0, 0));
