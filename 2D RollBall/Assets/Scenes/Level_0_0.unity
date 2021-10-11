@@ -3921,19 +3921,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4148592636867552629, guid: 54e251024b0ce2345b72b0060dfbd807, type: 3}
       propertyPath: mapTitle
-      value: "\u57FA\u51C6\u5730\u56FE1"
+      value: "\u65B0\u624B\u6307\u5F151"
       objectReference: {fileID: 0}
     - target: {fileID: 4148592636867552629, guid: 54e251024b0ce2345b72b0060dfbd807, type: 3}
       propertyPath: levelCode
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4148592636867552629, guid: 54e251024b0ce2345b72b0060dfbd807, type: 3}
       propertyPath: levelSubCode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4148592636867552629, guid: 54e251024b0ce2345b72b0060dfbd807, type: 3}
       propertyPath: mapDescription
-      value: "\u5C0F\u5FC3\u90A3\u4E9B<shake>\u9677\u9631</shake>\uFF0C\u7A0D\u6709\u4E0D\u614E\u4FBF\u8981\u91CD\u65B0\u6765\u8FC7\uFF01"
+      value: "\u6B22\u8FCE\uFF01\u5C1D\u8BD5<slide>\u5DE6\u53F3\u503E\u659C</slide>\u4F60\u7684\u624B\u673A\uFF0C\u8BA9\u84DD\u8272\u5C0F\u7403\u89E6\u78B0\u7EA2\u8272\u65D7\u5E1C\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8799013364391837328, guid: 54e251024b0ce2345b72b0060dfbd807, type: 3}
       propertyPath: sensitivitySlider

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8799013364391837328}
   - component: {fileID: 8799013364391837329}
   - component: {fileID: 4148592636867552629}
+  - component: {fileID: 278147334228565860}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -88,4 +89,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f95d8bace1692b4ab5bf001301db8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MapTitle: "\u5730\u56FE\u540D"
+  mapTitle: "\u5730\u56FE\u540D"
+  mapDescription: "\u5730\u56FE\u63CF\u8FF0"
+  levelCode: 0
+  levelSubCode: 0
+--- !u!114 &278147334228565860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8799013364391837341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7505a047012553a4fa5e189801f9b0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
