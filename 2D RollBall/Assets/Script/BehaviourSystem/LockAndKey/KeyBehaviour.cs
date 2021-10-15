@@ -8,6 +8,11 @@ public class KeyBehaviour : MonoBehaviour
 {
     public GameObject lockItem;
 
+    private void Start()
+    {
+        transform.DOMove(this.transform.position + new Vector3(0, 0.25f, 0f), 1f).SetEase(Ease.InOutQuart).SetLoops(-1,LoopType.Yoyo);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (lockItem != null)

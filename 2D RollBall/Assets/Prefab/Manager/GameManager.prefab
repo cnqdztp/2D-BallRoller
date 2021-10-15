@@ -62,7 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BallPrefab: {fileID: 4247654100782524473, guid: d795a140e77c25f43ab74529b66d256c, type: 3}
   SpawnPoint: {fileID: 0}
-  OverrideControllerSpeed: 100
+  OverrideControllerSpeed: 300
   _sceneSwitchManager: {fileID: 0}
   sensitivitySlider: {fileID: 0}
 --- !u!114 &8799013364391837329
@@ -105,3 +105,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7505a047012553a4fa5e189801f9b0ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sceneSwitchManager: {fileID: 0}

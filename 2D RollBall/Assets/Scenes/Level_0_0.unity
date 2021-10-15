@@ -3939,6 +3939,10 @@ PrefabInstance:
       propertyPath: sensitivitySlider
       value: 
       objectReference: {fileID: 1921498835}
+    - target: {fileID: 8799013364391837328, guid: 54e251024b0ce2345b72b0060dfbd807, type: 3}
+      propertyPath: OverrideControllerSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 8799013364391837341, guid: 54e251024b0ce2345b72b0060dfbd807, type: 3}
       propertyPath: m_Name
       value: GameManager

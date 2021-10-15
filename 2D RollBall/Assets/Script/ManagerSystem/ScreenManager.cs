@@ -11,6 +11,7 @@ public class ScreenManager : MonoBehaviour
         if (forceLandscape)
         {
             Screen.orientation = ScreenOrientation.LandscapeLeft;
+            Screen.sleepTimeout = SleepTimeout.NeverSleep;
         }
         
         
